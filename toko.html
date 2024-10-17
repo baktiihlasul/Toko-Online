@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Online - Add to Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f8f9fa;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    .cart-item {
+      background-color: #e9ecef;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+    }
+    .cart-item button {
+      background-color: #dc3545;
+      margin-left: 10px;
+    }
+    .cart-item button:hover {
+      background-color: #c82333;
+    }
+    .summary {
+      font-size: 18px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Daftar Produk</h1>
+  <table id="product-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nama Produk</th>
+        <th>Kategori</th>
+        <th>Harga (Rp)</th>
+        <th>Stok</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>Keranjang Belanja</h2>
+  <div id="cart-items"></div>
+  <div id="cart-summary" class="summary">Total: Rp0</div>
+
+  <script src="toko.js"></script>
+</body>
+</html>
